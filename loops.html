@@ -18,6 +18,24 @@ var randomInt = getRandomInt(1, 100);
 /* END STARTING CODE */
 
 // your code goes under here
+	var answer=prompt("guess a number!");
+	var i=0;
+	var n=0;
+	while (n==0){
+		if(answer>randomInt){
+			i++;
+			var answer=prompt("your guess is too high! guess again");
+		}
+		else if (answer<randomInt){
+			i++;
+			var answer=prompt("your guess is too low!");
+		}
+		else{
+			console.log("you guessed correctly! it took you "+i+" tries!");
+			n++;
+		}
+	}
+
 
     </script>
 </body>
