@@ -8,11 +8,13 @@ p {
 
 .pg {
 	background-color: green;
+	margin: 20px;
 }
 
 
 #yo{
 	margin: 10px 10px;
+	position: fixed;
 }
 
 div>p,div>a {
@@ -25,3 +27,21 @@ div>p,div>a {
  p:active{
  	background-color: pink;
  }
+
+ #centr{
+ 	display: block;
+ 	margin: 20px auto;
+ 	animation-name: move;
+ 	animation-duration: 5s;
+ }
+ 
+ *{
+ 	text-align: center;
+ }
+
+@keyframes move {
+	0% { margin-left: 2%; } /*3% of the page */
+	50% {margin-left: 20%;}
+	100%{margin-left: 100%;}
+
+}
