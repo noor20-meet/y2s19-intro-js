@@ -1,0 +1,27 @@
+p {
+	font-family: Comic Sans MS;
+}
+
+#second {
+	color: red;
+}
+
+.pg {
+	background-color: green;
+}
+
+
+#yo{
+	margin: 10px 10px;
+}
+
+div>p,div>a {
+	border: 5px;
+	border-style: dotted;
+}
+ a:hover{
+ 	color: white;
+ }
+ p:active{
+ 	background-color: pink;
+ }
