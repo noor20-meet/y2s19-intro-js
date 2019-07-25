@@ -35,22 +35,35 @@
 	</script>
 
 	<button class="buttons" id="button1">Learn more</button>
-	<button class="buttons" id="button2" onclick="myFunction()">Quiz Time </button>
+	<button class="buttons" id="button2">Quiz Time </button>
 	
 
 	<p id="demo" style="display:none">
-		Hello there! <br>
+		<br>
+		<span style="font-size: 50px;"> Hello there! </span> <br>
 		My name is Noor Ali, I'm a Y2 student in MEET. <br>
 		I love animals and I have many cats at home. <br> <br>
-		<span style="color: red; font-size: 50px;">Why MEET?</span>
+		<span style="color: red; font-size: 50px;">Why MEET?</span> <br>
+		I chose MEET because I wanted to learn more about the other side, 
+		<br> as well as learn CS and business arts. <br>
+		Eventually I realized CS is what I want to continue my life doing. 
+		<br>
 	</p>
 
 	<script>
 		$(document).ready(function(){
+			var counter = true;
 			$("#button1").click(function(){
-    			$("p").show();
+				if (counter == true){
+					$("p").show();
+					counter = false;}
+				else if (counter == false){
+					$("p").hide();
+					counter = true;}
   			});
-  		});
+  			$("#button2").click(function(){
+  				document.getElementsByTagName('HTML')[0].innerHTML="";})
+  			});
 	</script>
 	
 
