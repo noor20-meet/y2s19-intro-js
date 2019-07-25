@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+	</script>
+	<!-- <script src="index.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="style1.css">
+
+	<title>
+	.
+	</title>
+
+</head>
+
+<body>
+
+	<h1 id="bouncein1">
+		HELLO
+	</h1>
+
+	<br>
+
+	<h2 id="bouncein2" class="bouncein" style= "text-align: center;">
+		Click <span style="color:blue;">Learn more</span> to know more about me, or <span style="color:blue;">Quiz Time</span> to take a fun quiz!
+	</h2>
+	<script>
+		$(document).ready(function(){
+			$("#button1").click(function(){
+    		$("demo").show();
+  			});
+  		});
+	</script>
+
+	<button class="buttons" id="button1">Learn more</button>
+	<button class="buttons" id="button2" onclick="myFunction()">Quiz Time </button>
+	
+
+	<p id="demo" style="display:none">
+		Hello there! <br>
+		My name is Noor Ali, I'm a Y2 student in MEET. <br>
+		I love animals and I have many cats at home. <br> <br>
+		<span style="color: red; font-size: 50px;">Why MEET?</span>
+	</p>
+
+	<script>
+		$(document).ready(function(){
+			$("#button1").click(function(){
+    			$("p").show();
+  			});
+  		});
+	</script>
+	
+
+
+</body>
+</html>
